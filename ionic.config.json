@@ -1,0 +1,7 @@
+{
+  "name": "GestImmob",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

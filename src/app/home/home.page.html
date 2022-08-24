@@ -1,0 +1,201 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>  
+          <h3> <ion-icon name="location"></ion-icon>
+            <ion-text class="dakar">Dakar, </ion-text> <ion-text> Sénégal.</ion-text> </h3>
+        </ion-col>
+        <ion-col size="2">
+          <ion-thumbnail routerLink="/login">
+            <img src="assets/img/user.png" alt="">
+          </ion-thumbnail>
+          <!-- <ion-badge color="danger">2</ion-badge>
+          <ion-icon class="notif" name="notifications-outline">
+                </ion-icon> -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>  
+        <ion-searchbar placeholder="Rechercher"></ion-searchbar>
+      </ion-col>
+      <ion-col size="2">
+      <ion-button> 
+        <ion-icon name="options"></ion-icon>
+      </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>  
+        <ion-card class="carte">
+          <ion-card-header class="head"></ion-card-header>
+          <ion-card-content class="body">
+            Ma propriété
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="carte">
+          <ion-card-header class="head"></ion-card-header>
+          <ion-card-content class="body">
+            Toutes les propriétés
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="prop">
+    <ion-segment scrollable="true" value="populaire" [(ngModel)]="profile"  >
+      <ion-segment-button value="populaire">
+        <ion-label style="font-size: 8px;">Populaire</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="louer">
+        <!-- <ion-icon name="videocam"></ion-icon> -->
+        <ion-label style="font-size: 8px;">A louer</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="vendre">
+        <!-- <ion-icon name="videocam"></ion-icon> -->
+        <ion-label style="font-size: 8px;">A vendre</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div [ngSwitch]="profile">
+      <div class="segment-tab" *ngSwitchCase="'populaire'">
+        <ion-card routerLink="/profilmaison">
+          <ion-card-header style="--background: url('/assets/img/property-1.jpg') no-repeat;"></ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col class="type">  
+             Appartement 3 pièces
+                </ion-col>
+                <ion-col class="prix" size="4">
+                  75 000 /mois
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <h3>Ouest Foire, Khandar Yoff</h3>
+            <h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3  </ion-text>
+              <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1</ion-text>
+         
+            </h3>
+          </ion-card-content>
+        </ion-card>
+        <ion-card routerLink="/profilmaison">
+          <ion-card-header style="--background: url('/assets/img/property-3.jpg') no-repeat;"
+          ></ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col class="type">  
+             Appartement 3 pièces
+                </ion-col>
+                <ion-col class="prix" size="4">
+                  75 000 /mois
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <h3>Ouest Foire, Khandar Yoff</h3>
+            <h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3  </ion-text>
+              <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1</ion-text>
+         
+            </h3>
+          </ion-card-content>
+        </ion-card>
+      </div>
+      <div class="segment-tab" *ngSwitchCase="'louer'">
+        <ion-card routerLink="/profilmaison">
+          <ion-card-header style="--background: url('/assets/img/property-4.jpg') no-repeat;"></ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col class="type">  
+             Appartement 3 pièces
+                </ion-col>
+                <ion-col class="prix" size="4">
+                  75 000 /mois
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <h3>Ouest Foire, Khandar Yoff</h3>
+            <h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3  </ion-text>
+              <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1</ion-text>
+         
+            </h3>
+          </ion-card-content>
+        </ion-card>
+        <ion-card routerLink="/profilmaison">
+          <ion-card-header style="--background: url('/assets/img/property-5.jpg') no-repeat;"></ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col class="type">  
+             Appartement 3 pièces
+                </ion-col>
+                <ion-col class="prix" size="4">
+                  75 000 /mois
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <h3>Ouest Foire, Khandar Yoff</h3>
+            <h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3  </ion-text>
+              <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1</ion-text>
+         
+            </h3>
+          </ion-card-content>
+        </ion-card>
+      </div>
+      <div class="segment-tab" *ngSwitchCase="'vendre'">
+        <ion-card routerLink="/profilmaison">
+          <ion-card-header style="--background: url('/assets/img/property-6.jpg') no-repeat;"
+          ></ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col class="type">  
+             Appartement 3 pièces
+                </ion-col>
+                <ion-col class="prix" size="4">
+                  75 000 /mois
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <h3>Ouest Foire, Khandar Yoff</h3>
+            <h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3  </ion-text>
+              <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1</ion-text>
+         
+            </h3>
+          </ion-card-content>
+        </ion-card>
+        <ion-card routerLink="/profilmaison">
+          <ion-card-header style="--background: url('/assets/img/property-2.jpg') no-repeat;"></ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col class="type">  
+             Appartement 3 pièces
+                </ion-col>
+                <ion-col class="prix" size="4">
+                  75 000 /mois
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <h3>Ouest Foire, Khandar Yoff</h3>
+            <h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3  </ion-text>
+              <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1</ion-text>
+         
+            </h3>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+</div>
+</ion-content>

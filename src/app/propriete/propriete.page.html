@@ -1,0 +1,139 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+  Interventions
+    </ion-title>
+    <ion-icon routerLink="/demandeintervs" slot="end" name="add-outline"></ion-icon>
+  </ion-toolbar>
+  <ion-segment scrollable="true" value="tout" [(ngModel)]="profile"  >
+    <ion-segment-button value="tout">
+      <ion-label style="font-size: 8px;">Tout</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="venir">
+      <!-- <ion-icon name="videocam"></ion-icon> -->
+      <ion-label style="font-size: 8px;">A venir</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="cours">
+      <!-- <ion-icon name="videocam"></ion-icon> -->
+      <ion-label style="font-size: 8px;">En cours</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="termine">
+      <!-- <ion-icon name="videocam"></ion-icon> -->
+      <ion-label style="font-size: 8px;">Terminé</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="profile">
+    <div class="segment-tab" *ngSwitchCase="'tout'">
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col style="border-radius: 20px 0 0 20px;background: #224973;" size="2">  
+           <p class="date"> 08 Juin</p> 
+           <div class="bg-danger"> <p> A venir</p> </div>
+            </ion-col>
+            <ion-col>
+             <ion-card-header>
+              Réparation de lampe
+             </ion-card-header>
+             <ion-card-content>
+                <ion-item>
+                  <ion-icon slot="start" name="build"></ion-icon>
+                  <p>Lampe des escaliers</p>
+                </ion-item>
+                <ion-item>
+                  <ion-icon slot="start" name="location"></ion-icon>
+                  <p>Immeuble Ndiougua Kebe</p>
+                </ion-item>
+             </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card> 
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col style="border-radius: 20px 0 0 20px;background: #224973;" size="2">  
+           <p class="date"> 05 Juin</p> 
+           <div class="bg-success"> <p> Terminé</p> </div>
+            </ion-col>
+            <ion-col>
+             <ion-card-header>
+              Réparation des robinets
+             </ion-card-header>
+             <ion-card-content>
+                <ion-item>
+                  <ion-icon slot="start" name="build"></ion-icon>
+                  <p>Robinets appartement D3</p>
+                </ion-item>
+                <ion-item>
+                  <ion-icon slot="start" name="location"></ion-icon>
+                  <p>Immeuble Ndiougua Kebe</p>
+                </ion-item>
+             </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </div>
+    <div class="segment-tab" *ngSwitchCase="'venir'">
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col style="border-radius: 20px 0 0 20px;background: #224973;" size="2">  
+           <p class="date"> 08 Juin</p> 
+           <div class="bg-danger"> <p> A venir</p> </div>
+            </ion-col>
+            <ion-col>
+             <ion-card-header>
+              Réparation de lampe
+             </ion-card-header>
+             <ion-card-content>
+                <ion-item>
+                  <ion-icon slot="start" name="build"></ion-icon>
+                  <p>Lampe des escaliers</p>
+                </ion-item>
+                <ion-item>
+                  <ion-icon slot="start" name="location"></ion-icon>
+                  <p>Immeuble Ndiougua Kebe</p>
+                </ion-item>
+             </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>  
+    </div>
+    <div class="segment-tab" *ngSwitchCase="'cours'">
+      <p class="nomes">Pas d'interventions en cours.</p>
+    </div>
+    <div class="segment-tab" *ngSwitchCase="'termine'">
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col style="border-radius: 20px 0 0 20px;background: #224973;" size="2">  
+           <p class="date"> 05 Juin</p> 
+           <div class="bg-success"> <p> Terminé</p> </div>
+            </ion-col>
+            <ion-col>
+             <ion-card-header>
+              Réparation des robinets
+             </ion-card-header>
+             <ion-card-content>
+                <ion-item>
+                  <ion-icon slot="start" name="build"></ion-icon>
+                  <p>Robinets appartement D3</p>
+                </ion-item>
+                <ion-item>
+                  <ion-icon slot="start" name="location"></ion-icon>
+                  <p>Immeuble Ndiougua Kebe</p>
+                </ion-item>
+             </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

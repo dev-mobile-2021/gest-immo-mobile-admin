@@ -1,0 +1,92 @@
+.desc{
+    margin-left: 3%;
+    .carte{
+        width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.text{
+    color: gray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .icon{
+        font-size: 27px;
+        color: #224973;
+        margin-bottom: -3%;
+    }
+    .piece{
+        font-size: 20px;
+    font-style: italic;
+    }
+}
+
+ion-card{
+    --background: url('/assets/img/property-2.jpg') no-repeat;
+    height: 53%;
+    border-radius: 20px;
+    ion-button{
+        --border-radius: 20px;
+    }
+.resume{
+    margin-top: 40%;
+    color: white;
+}
+    h3{
+        font-size: 16px;
+        margin-left: 3%;
+    }
+    h2{
+        font-weight: bolder;
+    }
+}
+
+ion-content,ion-toolbar {
+    --background: aliceblue;
+}
+
+ion-footer{
+    background: aliceblue;
+    h1{
+        font-size: 18px;
+        margin-left: 4%;
+        margin-top: 3%;
+        color: #224973;
+        font-weight: bold;
+    }
+    p{
+        color: gray;
+        font-size: 11px;
+    }
+    ion-button{
+        float: right;
+    margin-top: -2%;
+    width: 35%;
+    }
+    ion-text{
+        font-size: 13px;
+    color: black;
+    }
+}
+
+.scroll-box {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+
+    ion-card{
+        width: 170px;
+        height: 170px;
+        background-size: cover;
+    }
+  }
+
+  ion-fab{
+    margin-top: -12%;
+  }

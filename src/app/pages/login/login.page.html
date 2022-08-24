@@ -1,0 +1,53 @@
+
+
+<ion-content>
+  <div class="header">
+    <!-- <ion-title>Connexion</ion-title> -->
+    <ion-toolbar>
+      <h2> REYHAN Immo </h2>
+      <h4>L'exigence de la qualité</h4>
+    </ion-toolbar>
+   
+  </div>
+  <ion-thumbnail>
+    <img src="assets/img/logo.png" />
+  </ion-thumbnail>
+<div class="carte">
+<ion-card>
+  <!-- <ion-label>Adresse mail</ion-label> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon name="person"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-input type="text"  placeholder="Identifiant"  ></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card>
+  <!-- <ion-label>Mot de passe</ion-label> -->
+<ion-grid>
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon name="lock-closed"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <ion-input type="password"  placeholder="Mot de passe"   ></ion-input>
+    </ion-col>
+    <ion-col size="2">
+      <ion-icon name="eye"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card>
+
+<h4 class="passe">Mot de passe oublié?</h4>
+
+<ion-button routerLink="/tabs/home" size="large">Se connecter</ion-button>
+<!-- <p class="clic" routerLink="/login">Vous avez déja un compte? Cliquez ici!</p>	 -->
+<p class="clic" routerLink="/inscription">Vous n'avez pas de compte? <ion-text style="color: #76231a;font-style: italic;"> Cliquez ici!</ion-text> </p>	
+</div>
+</ion-content>

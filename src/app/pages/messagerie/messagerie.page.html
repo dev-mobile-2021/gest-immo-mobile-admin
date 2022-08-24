@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-icon routerLink="/tabs/profil" slot="start" name="chevron-back"></ion-icon>
+    <ion-title>
+  Messagerie
+    </ion-title>
+  
+  </ion-toolbar>
+  <ion-segment scrollable="true" value="annonce" [(ngModel)]="profile"  >
+    <ion-segment-button value="annonce">
+      <ion-label style="font-size: 8px;">Annonces</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="message">
+      <!-- <ion-icon name="videocam"></ion-icon> -->
+      <ion-label style="font-size: 8px;">Mes messages</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="profile">
+    <div class="segment-tab" *ngSwitchCase="'annonce'">
+      <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col style="border-radius: 20px 0 0 20px;background: #224973;" size="3">  
+           <p class="date"><ion-text class="pdate">Du </ion-text>  2021/12/10 <br>
+            <ion-text class="pdate">Au </ion-text> 2021/12/10
+          </p> 
+       
+            </ion-col>
+            <ion-col>
+             <ion-card-header>
+              Nettoyage
+             </ion-card-header>
+             <ion-card-content>
+                <ion-item>
+                  <ion-icon slot="start" name="water"></ion-icon>
+                  <p>Nettroyage de tout l'immeuble</p>
+                </ion-item>
+                <ion-item>
+                  <ion-icon slot="start" name="location"></ion-icon>
+                  <p>Immeuble Ndiougua Kebe, Apptmt D3</p>
+                </ion-item>
+             </ion-card-content>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card> 
+    </div>
+    <div class="segment-tab" *ngSwitchCase="'message'">
+<p class="nomes">Vous n'avez pas encore recu de messages.</p>
+    </div>
+  </div>
+</ion-content>

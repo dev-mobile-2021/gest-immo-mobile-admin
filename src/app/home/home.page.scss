@@ -1,0 +1,93 @@
+ion-content,ion-toolbar {
+    --background: aliceblue;
+}
+
+ion-thumbnail {
+    background: #d8e3f1;
+    border-radius: 50px;
+}
+
+.dakar{
+    font-weight: bold;
+    margin-left: 3%;
+    font-family: cursive;
+    color: #76231a;
+}
+ion-searchbar{
+    --background: #d8e3f1;
+    --border-radius: 20px;
+    margin-top: -2%;
+}
+
+.carte{
+    height: 155px;
+    box-shadow: 10px 5px 5px #0000002b;
+    border-radius: 10px;
+    .head{
+        --background: url('/assets/img/property-2.jpg') no-repeat center center;
+        background-size: cover;
+        height: 65%;
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+        border-radius: 10px;
+    }
+    .body{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        margin-top: 5%;
+        font-style: oblique;
+    }
+}
+
+.prop{
+    ion-card{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 17px;
+    }
+    ion-card-header{
+        // --background: url('/assets/img/property-2.jpg') no-repeat;
+        background-size: cover;
+        height: 160px;
+        width: 100%;
+    }
+    ion-card-content{
+    .type{
+        text-align: left;
+        font-weight: bold;
+        color: black;
+        margin-left: -5%;
+    }
+    .prix{
+        text-align: right;
+        font-style: italic;
+        color: #224973;
+        margin-right: -5%;
+    }
+    .icon{
+        font-size: 22px;
+        color: #76231a;
+        margin-bottom: -1%;
+    }
+    .piece{
+        font-size: 18px;
+        margin-left: 2%;
+    }
+    }
+}
+
+.notif{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    // margin-top: 30%;
+}
+ion-badge{
+    margin-bottom: -40%;
+    margin-left: 60%;
+}

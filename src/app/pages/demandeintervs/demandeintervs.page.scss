@@ -1,0 +1,32 @@
+ion-header{
+    ion-title{
+text-align: center;
+font-weight: bold;
+color: white;
+    }
+    ion-icon{
+        font-size: 30px;
+    }
+}
+
+ion-content{
+    --background: aliceblue;
+    ion-list {
+        margin-top: 30%;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+    ion-icon{
+        color: #224973;
+    }
+    ion-button{
+        width: 64%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10%;
+        --border-radius: 20px;
+    }
+}

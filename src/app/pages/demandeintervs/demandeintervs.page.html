@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-icon routerLink="/tabs/propriete" slot="start" name="chevron-back"></ion-icon>
+    <ion-title>Demande d'intervention</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-icon slot="start" name="hammer"></ion-icon>
+    <ion-textarea  type="text"  placeholder="Description"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-icon slot="start" name="build"></ion-icon>
+    <!-- <ion-label>Type d'intervention</ion-label> -->
+    <ion-select placeholder="Type d'intervention" value="" okText="Ok" cancelText="Annuler">
+      <ion-select-option value="gen">Général</ion-select-option>
+      <ion-select-option value="par">Particulier</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-icon slot="start" name="location"></ion-icon>
+    <!-- <ion-label>Immeuble</ion-label> -->
+    <ion-select placeholder="Immeuble" value="" okText="Ok" cancelText="Annuler">
+      <ion-select-option value="kebe">Immeuble Ndiougua Kebe</ion-select-option>
+      <ion-select-option value="par">-</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-button routerLink="/tabs/propriete" size="large">Valider</ion-button>
+</ion-content>

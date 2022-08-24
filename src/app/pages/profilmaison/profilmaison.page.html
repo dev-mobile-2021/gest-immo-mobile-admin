@@ -1,0 +1,82 @@
+
+<ion-content>
+<ion-card>
+    <ion-grid>
+        <ion-row>
+          <ion-col >
+              <ion-button routerLink="/tabs/home">
+                <ion-icon name="chevron-back"></ion-icon>
+              </ion-button>
+         
+          </ion-col>
+          <ion-col size="2">
+            <ion-button>
+                <ion-icon name="heart-outline"></ion-icon>
+              </ion-button>
+           
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+<div class="resume">
+    <h2>Appartement <br> 3 pièces</h2>
+<h3>Ouest Foire, Khandar Yoff</h3>
+</div>
+
+</ion-card>
+<ion-fab   horizontal="end"  >
+  <ion-fab-button>
+    <ion-icon name="call"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+<div class="desc">
+<h2>Description</h2>
+<h3> <ion-icon class="icon" name="bed"></ion-icon> <ion-text class="piece">  3 chambres </ion-text>
+    <ion-icon class="icon" name="restaurant"></ion-icon> <ion-text class="piece">  1 cuisine </ion-text>
+  </h3>
+<p class="text">Cet appartement est Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+<!-- <img class="carte" src="assets/img/carte.JPG" alt=""> -->
+<div  class="scroll-box">
+    <div class="star" (click)="OuvrirModal()">
+    <!-- <div *ngFor="let celeb of Acteurs  | filter:filterTerm;" (click)="getDetail(celeb.uid)"  class="star"> -->
+      <!-- <ion-card style="--background: url({{celeb.dp}});">   -->
+      <ion-card style="--background: url('/assets/img/property-2.jpg');">  
+      </ion-card>
+    </div>
+    <div class="star" (click)="OuvrirModal()">
+        <ion-card style="--background: url('/assets/img/property-1.jpg');">  
+        </ion-card>
+    </div>
+    <div class="star" (click)="OuvrirModal()">
+        <ion-card style="--background: url('/assets/img/property-3.jpg');">  
+        </ion-card>
+    </div>
+    <div class="star" (click)="OuvrirModal()">
+        <ion-card style="--background: url('/assets/img/property-4.jpg');">  
+        </ion-card>
+    </div>
+  </div>
+
+</div>
+</ion-content>
+
+<ion-footer>
+    <!-- <ion-grid>
+        <ion-row>
+          <ion-col>
+           <p>Prix</p>
+<h1>75 000 CFA
+    <ion-text>/mois</ion-text>
+</h1>
+        </ion-col>
+          <ion-col size="3">
+            <ion-button>Louer</ion-button>
+          </ion-col>
+ 
+        </ion-row>
+      </ion-grid> -->
+      <h1> <p>Prix</p> 75 000 CFA
+        <ion-text>/mois</ion-text>
+
+    <ion-button>Louer</ion-button>
+</h1>
+</ion-footer>
